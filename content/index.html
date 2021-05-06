@@ -1,0 +1,33 @@
+
+
+<div class="page">
+    <style>
+        .background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            pointer-events: none;
+        }
+        iframe {
+            position: relative;
+            width: 100%;
+        }
+        * {
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none; 
+        }
+    </style>
+    <div class="background">
+      <iframe src="https://www.shadertoy.com/embed/MsdSWl?gui=false&t=10&paused=false&muted=true" frameborder="0" style="overflow:hidden;height:100%;width:100%" height="100%" width="100%"></iframe>
+    </div>
+    <script>
+        window.onresize = () => { location.reload() }
+        document.oncontextmenu = () => { return false }
+    </script>
+</div>
+  
