@@ -24,8 +24,7 @@ class WallpaperServer(BaseHTTPRequestHandler):
         self.send_response(200)
         self.send_header('Content-type', 'text/html')
         self.end_headers()
-        home = str(Path.home())
-        htmlFile = open(home + '/.dynawall/content/index.html', 'r')
+        htmlFile = open('./content/index.html', 'r')
         pageData = htmlFile.read()
 
         self.wfile.write(bytes(pageData, 'utf8'))

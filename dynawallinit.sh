@@ -1,5 +1,5 @@
 pkill -f 'wallinit.py'
 for arg in "$@"
 do
-    python ~/.dynawall/wallinit.py "$arg" &
+    python ./wallinit.py "$arg" &
 done
